@@ -1,2 +1,2 @@
 # Projekti
-Projektin në lëndën interneti
+Projekti në lëndën interneti
