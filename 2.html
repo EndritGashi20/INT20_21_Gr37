@@ -1,19 +1,67 @@
 <!DOCTYPE html>
-<body>
+<head>
     <style>
-        h1 {text-align: center;}
+h1 {text-align:center;}
+h1 {color: blue;}
+fieldset {
+  background-color: #d4d1ee;
+}
+
+legend {
+  background-color: rgb(241, 110, 121);
+  color: rgb(36, 4, 4);
+  padding: 5px 10px;
+}
+
+input {
+  text-align: center;
+}
+
+
+    
     </style>
 <title>Regjistrohu</title>
-<head>
+</head>
+<body>
     <h1>REGJISTROHU</h1>
     
+    <form style="margin-left: 570px;">
+    
+    <fieldset style="width: 150px;">
+<legend> Të dhënat </legend>
+
+<label>Emri;<br>
+    <input type="text" name="emri"<br />
+</label>
+<label>Mbiemri;
+    <input type="text" name="mbiemri"<br />
+</label>
+<label>E-mail;
+    <input type="text" name="e-mail"<br />
+</label>
+<label>Gjinia;
+    <input type="radio" name="gjinia" value=1>Mashkull<br>
+    <input type="radio" name="gjinia" value=1>Femer<br>
+</label>
+<label>Paswordi;
+
+    <input type="password" >
+</label>
+<label>Rishkruani paswordin;
+
+    <input type="password" >
+</label>
+
+<input type="submit">
 
 
+    </fieldset>
+</form>
 
-
-
-</head>
 
 
 
 </body>
+
+
+
