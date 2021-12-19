@@ -3,12 +3,44 @@
     <head>
     <title>libraria.com</title>
     <style>
+        a:link {
+  color: red;
+}
 
-        h1 { text-align: left;border: 0.5cm outset rgb(86, 47, 226);width: 5cm;}
+a:visited {
+  color: rgb(8, 12, 8);
+}
+
+a:hover {
+  color: yellow;
+}
+
+a:active {
+  color: blue;
+}
+        .header{
+height:150px;
+width:100%;
+background: rgba(0,0,0,0.5);
+outline: #171a17 solid 5px;
+
+}
+     body {
+            background-image: url(../images/o.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .spon{
+            text-align:right;margin-left: 1000px; border: black; width: 10px; height: 5px;
+        }
+        h1 { text-align: left;border: 0.5cm outset rgb(83, 80, 94);width: 5cm;transform: translate(10px,20px);}
         h2 {text-align: justify;}
-        h3 {text-align:right;margin-left: 1000px;}
+     
         .lista{
-            border: black; background-color: rgb(75, 69, 156);font-size: 17px;
+            border: black; background-color: rgba(0,0,0,0.6);font-size: 17px;
+      
         }
         .teksti{
             margin-top: 30px;    
@@ -21,18 +53,24 @@
  
     </style>
     </head>
-    <body style="background-color: rgb(255, 92, 92);">
-<h1>Libraria.com</h1>
+    <body style="background-image: url('o.jpg');" >
+
+
+<div class="header">
+    <h1 >Libraria.com</h1>
+    <ul>
+        <p style="font-size:30px;padding:0px;color: black;"> <a  href="2.html"  > <abbr title =" Apliko "> Regjistrohu-- </abbr> </a> <a  href="mailto:someone@example.com">Kontakto--</a> <a href="3.html" target="blank_">Produktet---</a> <a href="5.html" target="blank_">Rreth Nesh</a> </p> <p> </div>
+    </div>
 <div class="ee">
-    <p> <a  href="2.html"  > <abbr title =" Apliko "> Regjistrohu-- </abbr> </a> <a  href="mailto:someone@example.com">Kontakto--</a> <a href="3.html" target="blank_">Produktet---</a> <a href="5.html" target="blank_">Rreth Nesh</a> </p> <p> </div>
+    
 <div class="orari"><p2><i>Per te informuar per orarin e takimve me shkrimtaret shtypni ketu</i> <a href="4.html"><u>orari</u></a></p2></div>
 
   
 
    
-    <h3>Sponsorizuar nga  <a href="https://fiek.uni-pr.edu/"><mark >Fakulteti Inxhinieris Elektrike dhe Kompjuterike</mark></a></h3>
+   <div class="spon"> <h3 style="border: black;">Sponsorizuar nga  <a href="https://fiek.uni-pr.edu/"><mark >Fakulteti Inxhinieris Elektrike dhe Kompjuterike</mark></a></h3></div>
    <div class="teksti"> <h2>Mirë se vini në librarin më të madhe online</h2>
-    <p style="color:black ;font-size:28px;">  <img src="libra.png" alt="aaa" style="float:right">Në këtë shtëpi të librit gjenden shumë gjini: beletristikë, ekonomi, drejtësi,<br> teknologji informative
+    <p style="color:black ;font-size:28px;">  Në këtë shtëpi të librit gjenden shumë gjini: beletristikë, ekonomi, drejtësi,<br> teknologji informative
         mjeksi, shkenca shoqërore, shkenca ekzakte, kulturë, art,<br> autobiografi, monografi të ndryshme të personaliteteve botërorë,kombëtare etj. <br>
 </p>
 <p style="color:black ;font-size:28px;"> <span style="color:red">Pse</span> duhet të lexojmë?
@@ -48,14 +86,14 @@
 
 <div class="lista">
     <p>Numri Kontaktues</p>  
- <ol>                                    
+ <ol >                                    
  
      <li>049111111</li>
      <li>045111111</li>
      <LI>043111111</LI>
  </ol>
  <p>TRANSPORT</p>
- <UL>
+ <UL style="list-style-type: square;">
      <li>KOSOVE</li>
      <LI>SHQIPERI</LI>
      <LI>MAQEDONI</LI>

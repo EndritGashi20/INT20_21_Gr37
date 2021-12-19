@@ -3,23 +3,76 @@
     <head>
         <title>Produktet</title>
         <style>
+            body {
+            background-image: url(../images/o.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
             h1{text-align: center;border: 0.5cm outset rgb(86, 47, 226);width: 5cm; margin-left: 13cm;}
           img{float: left;}
-            
+          .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: rgb(5, 0, 0);
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
         </style>
          
     </head>
-    <body style="background-color:rgb(255, 92, 92);">
-        <h1>Kategorit</h1>
-        <img src="biografi.jpg" width="300" height= "400" alt="biografi">
-        <img src="shkenc.jpg"width="300" height= "400"   alt="shkenc">
-        <img src="histori.jpg"width="300" height= "400" alt="histori"float="right"><p>        </p>
-       
-        <img src="tolstoy.jpg"width="300" height="400" alt="tolstoy"  ><br><br>
-        
-        <div class="cmimi"><P style="font-size: 20px;">  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> cmimi 9.99 euro  <input type="submit"value="blej"> ------------------------- cmimi 15,99 euro <input type="submit" value="blej">----------------------------cmimi 9,50 euro <input type="submit"value="blej">-------------------------------cmimi 6,59 euro<input type="submit"value="blej"    </P></div>
+    <body style="background-image: url('o.jpg');">
+<h1>Kategorit</h1>
 
-       
+
+<div class="card" style="margin-left: 0cm;">
+  <img src="shkenc.jpg" alt="Denim Jeans" style="width:100%">
+  <p class="price">$19.99</p>
+  
+  <p><button>Add to Cart</button></p>
+  
+</div>
+<div class="card">
+    <img src="histori.jpg" alt="histori" style="width:100%">
+    <p class="price">$19.99</p>
+    
+    <p><button>Add to Cart</button></p>
+  </div>
+  <div class="card">
+    <img src="biografi.jpg" alt="biografi" style="width:100%">
+    <p class="price">$19.99</p>
+    
+    <p><button>Add to Cart</button></p>
+  </div>
+  <div class="card">
+    <img src="tolstoy.jpg" alt="histori" style="width:100%">
+    <p class="price">$19.99</p>
+    
+    <p><button>Add to Cart</button></p>
+  </div>
+  
 
 
 
