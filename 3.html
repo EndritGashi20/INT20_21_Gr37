@@ -11,34 +11,31 @@
             background-size: 100% 100%;
         }
             h1{text-align: center;border: 0.5cm outset rgb(86, 47, 226);width: 5cm; margin-left: 13cm;}
-          img{float: left;}
-          .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
+            div.gallery {
+  margin: 5px;
+  border: 3px solid rgb(22, 21, 21);
+  float: left;
+  width: 250px;
+}
+div.gallery:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+div.gallery:hover {
+  border: 1px solid #777;
 }
 
-.price {
-  color: rgb(5, 0, 0);
-  font-size: 22px;
+div.gallery:hover{
+  rotate: 3px;
 }
 
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
+div.gallery img {
   width: 100%;
-  font-size: 18px;
+  height: 10cm;
 }
 
-.card button:hover {
-  opacity: 0.7;
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
         </style>
          
@@ -46,33 +43,40 @@
     <body style="background-image: url('o.jpg');">
 <h1>Kategorit</h1>
 
-
-<div class="card" style="margin-left: 0cm;">
-  <img src="shkenc.jpg" alt="Denim Jeans" style="width:100%">
-  <p class="price">$19.99</p>
+<div class="gallery">
   
-  <p><button>Add to Cart</button></p>
-  
+    <img src="shkenc.jpg" alt="shkenc" width="800" height="400">
+  </a>
+  <div class="desc">cmimi 4.99euro <button>Blej</button></div>
 </div>
-<div class="card">
-    <img src="histori.jpg" alt="histori" style="width:100%">
-    <p class="price">$19.99</p>
-    
-    <p><button>Add to Cart</button></p>
-  </div>
-  <div class="card">
-    <img src="biografi.jpg" alt="biografi" style="width:100%">
-    <p class="price">$19.99</p>
-    
-    <p><button>Add to Cart</button></p>
-  </div>
-  <div class="card">
-    <img src="tolstoy.jpg" alt="histori" style="width:100%">
-    <p class="price">$19.99</p>
-    
-    <p><button>Add to Cart</button></p>
-  </div>
+
+<div class="gallery">
   
+    <img src="tolstoy.jpg" alt="tolstoy" width="800" height="400">
+  </a>
+  <div class="desc">cmimi 8.99 euro <button>Blej</button></div>
+</div>
+
+<div class="gallery">
+  
+    <img src="show_logo.jpg" alt="histori" width="800" height="400">
+  </a>
+  <div class="desc">cmimi 6.99 euro <button>Blej</button></div>
+</div>
+
+<div class="gallery">
+  
+    <img src="biografi.jpg" alt="biografi" width="800" height="500">
+  </a>
+  <div class="desc">cmimi 5.99 euro <button>blej</button></div>
+</div>
+<div class="gallery">
+  
+    <img src="histori.jpg" alt="histori" width="800" height="500">
+  </a>
+  <div class="desc">cmimi 5.99 euro <button>blej</button></div>
+</div>
+
 
 
 
