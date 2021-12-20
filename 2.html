@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
+
+  </script>
     <style>
         .header{
 height:150px;
@@ -46,6 +64,7 @@ input {
   to {top: 60px;}
 }
 
+
     </style>
 <title>Regjistrohu</title>
 </head>
@@ -87,6 +106,11 @@ input {
 
 <div class="move"><h1>REKLAMO KETU 044-111-222</h1></div>
 
+<audio controls style="margin-left:27cm">
+  <source src="1.ogg" type="audio/ogg">
+  <source src="1.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 
 </body>
 

@@ -10,7 +10,7 @@
             background-attachment: fixed;
             background-size: 100% 100%;
         }
-            h1{text-align: center;border: 0.5cm outset rgb(86, 47, 226);width: 5cm; margin-left: 13cm;}
+            .h1{text-align: center;width: 5cm; margin-left: 13cm;margin-top: 0cm;height 5cm}
             div.gallery {
   margin: 5px;
   border: 3px solid rgb(22, 21, 21);
@@ -18,7 +18,7 @@
   width: 250px;
 }
 div.gallery:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 div.gallery:hover {
   border: 1px solid #777;
@@ -41,7 +41,14 @@ div.desc {
          
     </head>
     <body style="background-image: url('o.jpg');">
-<h1>Kategorit</h1>
+      <div class="h1">
+      <svg width="400" height="180">
+        <rect x="50" y="40" rx="20" ry="20" width="300" height="50"
+        style="fill:black;stroke:black;stroke-width:5;opacity:0.5" />
+        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">Libraria.com</text>
+      Sorry, your browser does not support inline SVG.
+      </svg>
+      </div>
 
 <div class="gallery">
   
