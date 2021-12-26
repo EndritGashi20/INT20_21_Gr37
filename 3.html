@@ -78,75 +78,171 @@ div.desc {
 
 <div class="gallery">
   
-    <img src="shkenc.jpg" alt="shkenc" width="800" height="400">
+    <img src="shporta3.png" alt="shkenc" width="400" height="400">
+    <div>
+      <h5>Price: 78 Rupees</h5>
+      <h5>Quantity: <span id="quantity">0</span></h5>
+     <h5>Total Price: <span id="total-price">0</span> Rupees</h5>
+ </div>
   </a>
-  <div class="desc"> <button>Blej 4.99 euro</button></div>
+ 
+  <button class="btn" onclick="productCount(false)">-</button>
+  <input type="number" value="0" id="input">
+ 
+  <button class="btn" onclick="productCount(true)">+</button>
+  <br>
+
+  <button class="btn btn-buy" id="buy">Buy Now Product</button>
 </div>
 
 <div class="gallery">
   
+  <img src="shkenc.jpg" alt="shkenc" width="800" height="400">
+  <div>
+    <h5>Price: 12.00 euro</h5>
+ 
+</div>
+</a>
+
+<button class="btn" onclick="productCount(false)">-</button>
+<input type="number" value="0" id="input">
+
+<button class="btn" onclick="productCount(true)">+</button>
+<br>
+
+
+</div>
+
+
+<div class="gallery">
+  
     <img src="tolstoy.jpg" alt="tolstoy" width="800" height="400">
+    <div>
+      <h5>Price: 12.00 euro</h5>
+     
+ </div>
   </a>
-  <div class="desc"> <button id="button1"> Blej 8.99 euro</button></div>
+  <button class="btn" onclick="productCount(false)">-</button>
+  <input type="number" value="0" id="input">
+ 
+  <button class="btn" onclick="productCount(true)">+</button>
+  <br>
+
+  
+  
 </div>
 
 <div class="gallery">
   
     <img src="show_logo.jpg" alt="histori" width="800" height="400">
+    <div>
+      <h5>Price: 12.00 euro</h5>
+     
+ </div>
   </a>
-  <div class="desc">  <button id="button2">Blej 6.99 euro</button></div>
+  <button class="btn" onclick="productCount(false)">-</button>
+  <input type="number" value="0" id="input">
+ 
+  <button class="btn" onclick="productCount(true)">+</button>
+  <br>
+
+  
+  
 </div>
 
 <div class="gallery">
   
     <img src="biografi.jpg" alt="biografi" width="800" height="500">
+    <div>
+      <h5>Price: 12.00 euro</h5>
+ </div>
   </a>
-  <div class="desc">  <button onclick="blerja()" id="button3">blej 5.99 euro</button></div>
+  <button class="btn" onclick="productCount(false)">-</button>
+  <input type="number" value="0" id="input">
+ 
+  <button class="btn" onclick="productCount(true)">+</button>
+  <br>
+
+  
 </div>
 <div class="gallery">
   
     <img src="histori.jpg" alt="histori" width="800" height="500">
+    <h5>Price: 12.00 euro</h5>
   </a>
-  <div class="desc">  <button onclick="blerja()" id="button4">blej 5.99 euro</button></div>
+  <button class="btn" onclick="productCount(false)">-</button>
+  <input type="number" value="0" id="input">
+ 
+  <button class="btn" onclick="productCount(true)">+</button>
+  <br>
 </div>
 
 <div class="gallery1">
   
   <img src="java.jpg" alt="" width="800" height="400">
+  <h5>Price: 12.00 euro</h5>
 </a>
-<div class="desc"> <button>Blej 4.99 euro</button></div>
+<button class="btn" onclick="productCount(false)">-</button>
+  <input type="number" value="0" id="input">
+ 
+  <button class="btn" onclick="productCount(true)">+</button>
+  <br>
 </div>
 <div class="gallery1">
   
   <img src="c++.jpg" alt="c++" width="800" height="400">
+  <h5>Price: 12.00 euro</h5>
 </a>
-<div class="desc"> <button>Blej 4.99 euro</button></div>
+<button class="btn" onclick="productCount(false)">-</button>
+  <input type="number" value="0" id="input">
+ 
+  <button class="btn" onclick="productCount(true)">+</button>
+  <br>
 </div>
 <div class="gallery1">
   
   <img src="Holmes.jpg" alt="Holmes" width="800" height="400">
+  <h5>Price: 12.00 euro</h5>
 </a>
-<div class="desc"> <button>Blej 4.99 euro</button></div>
+<button class="btn" onclick="productCount(false)">-</button>
+  <input type="number" value="0" id="input">
+ 
+  <button class="btn" onclick="productCount(true)">+</button>
+  <br>
 </div>
-<div class="gallery1">
+
+
+<p style="font-size: 1cm;">“Miq të mirë, libra të mirë dhe një ndërgjegje e qetë: kjo është jeta ideale.”
+
+  ― Mark Twain</p>
+
+<script>
   
-  <img src="lasmiserables.jpg" alt="lasmiserables" width="800" height="400">
-</a>
-<div class="desc"> <button>Blej 4.99 euro</button></div>
-</div>
-<div class="gallery1">
-  
-  <img src="java.jpg" alt="java" width="800" height="400">
-</a>
-<div class="desc"> <button>Blej 4.99 euro</button></div>
-</div>
+    function productCount(product){
+       const inputBtn = document.getElementById('input').value;
+       const newInputBtn = parseInt(inputBtn);
+       let total = newInputBtn;
+       if(product == true){
+        total = newInputBtn + 1;
+       }
+       if(product == false && newInputBtn > 0){
+        total = newInputBtn - 1;
+       }
+       document.getElementById('quantity').innerText = document.getElementById('input').value = total;
+       
+    }
 
-<input width="30%" id="in1">
+    const buyBtn = document.getElementById('buy');
+    buyBtn.addEventListener('click', function(){
+       const inputBtn =   document.getElementById('quantity').innerText =  document.getElementById('input').value;
+       const newInputBtn = parseInt(inputBtn);
+
+       const total = newInputBtn * 12;
+       document.getElementById('total-price').innerText = total;
+    })</script>
 
 
 
-
-<script src="numrim.js"></script>
     </body>
 
 
