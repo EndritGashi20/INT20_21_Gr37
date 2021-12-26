@@ -70,20 +70,20 @@ input {
 </head>
 <body style="background-image: url('o.jpg');">
   <div class="header">  <h1 style="margin-top: 1cm;"> REGJISTROHU</h1> </div>
- 
-    <form id="ii" style="margin-left: 570px;">
+ <div id="error1"></div>
+    <form id="ii" action=""  method="GET" style="margin-left: 570px;">
     
     <fieldset style="width: 150px;">
 <legend> Të dhënat </legend>
 
 <label>Emri;<br>
-    <input type="text" name="emri" autofocus><br />
+    <input type="text" id="in1"  autofocus><br />
 </label>
 <label>Mbiemri;
-    <input type="text" name="mbiemri"><br />
+    <input type="text" id="in2" ><br />
 </label>
 <label>E-mail;
-    <input type="text" name="e-mail"><br />
+    <input type="text" id="in3" ><br />
 </label>
 <label>Gjinia;
     <input type="radio" name="gjinia" value=1>Mashkull<br>
@@ -91,15 +91,13 @@ input {
 </label>
 <label>Paswordi;
 
-    <input type="password" >
+    <input type="password" id="in4">
 </label>
 <label>Rishkruani paswordin;
 
-    <input type="password" >
+    <input type="password" id="in5">
 </label>
-
-<input type="submit">
-
+<button type="submit" id="button1">
 
     </fieldset>
 </form>
@@ -111,7 +109,7 @@ input {
   <source src="1.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
-
+<script src="form.js"></script>
 </body>
 
 </html>

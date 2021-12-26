@@ -46,10 +46,41 @@
             Nuk ka mundësi të mos kujtosh thëniet të mendjeve të ndritura dedikuar librit, sapo shkel në librarinë “Dukagjini”, në zemër të Prishtinës. Lexuesit që e frekuentojnë i kanë vënë emrin “Institucioni i Librit”. Por, asgjë nuk është arritur brenda ditës apo pak ditësh, pak muajsh apo pak vjetësh.
             
             Libraria.com filloi punën më 4 Maj të vitit 2000. Ishte periudhë paslufte, vendi kishte shumë humbje e mungesa, ndërsa mes të tjerash ndihej më shumë se kurrë nevoja për literaturë shkollore/universitare dhe krijimtari letrare si për nxënësit e shkollave, studentët,<br> ashtu edhe për lexuesit e rregullt që leximin e kanë ushqim shpirtëror.</p>
-
-
+            <audio controls style="margin-left:25cm">
+              <source src="2.ogg" type="audio/ogg">
+              <source src="2.mp3" type="audio/mpeg">
+           
+          
+            </audio>
+            <p id="demo"></p>
+            <script>
+                let day;
+                switch (new Date().getDay()) {
+                  case 0:
+                    day = " 10:00-19:00";
+                    break;
+                  case 1:
+                    day = "10:00-19:00";
+                    break;
+                  case 2:
+                    day = " 10:00-16:00";
+                    break;
+                  case 3:
+                    day = "  10:00-14:00";
+                    break;
+                  case 4:
+                    day = " 10:00-16:00";
+                    break;
+                  case 5:
+                    day = " 10:00-16:00";
+                    break;
+                  case  6:
+                    day = "10:00-19:00";
+                }
+                document.getElementById("demo").innerHTML = "Today we are open from " + day;
+                </script>
             
-            
+                
 
 
     </body>

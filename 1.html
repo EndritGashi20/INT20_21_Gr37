@@ -28,7 +28,7 @@ outline: #171a17 solid 5px;
      body {
             background-image: url(../images/o.jpg);
             background-position: center center;
-            background-repeat: no-repeat;
+        background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100%;
         }
@@ -39,8 +39,11 @@ outline: #171a17 solid 5px;
         h2 {text-align: justify;}
      
         .lista{
-            border: black; background-color: rgba(0,0,0,0.6);font-size: 17px;
+            border: black; font-size: 17px;width: 500px;float: left;height: 50%;
       
+        }
+        .Slideshow{
+            padding-left: 50%;
         }
         .teksti{
             margin-top: 30px;    
@@ -51,7 +54,7 @@ outline: #171a17 solid 5px;
         .libri{
             width: 1000px;
         }
-        .ee{font-size:20px;border-style:double;border-width: thick;}
+        .ee{font-size:20px;}
         .orari{font-size: 30px;}
         .move {
   width: 100px;
@@ -60,18 +63,23 @@ outline: #171a17 solid 5px;
   position: relative;
   animation: mymove 5s infinite;
 }
+.slider{margin-left: 30%;margin-top: 5%;}
+.show-content{display: block;}
+.hidden-content{display: none;}
  
     </style>
     </head>
     <body style="background-image: url('o.jpg');" >
-
+       
       
 
 
-<div class="header">
+
+        <div class="header">
+
     <h1 >Libraria.com</h1>
     <ul>
-        <p style="font-size:30px;padding:0px;color: black;"> <a  href="2.html"  > <abbr title =" Apliko "> Regjistrohu-- </abbr> </a> <a  href="mailto:someone@example.com">Kontakto--</a> <a href="3.html" target="blank_">Produktet---</a> <a href="5.html" target="blank_">Rreth Nesh</a> </p> <p> </div>
+        <p style="font-size:30px;padding:0px;color: black;"> <a  href="2.html"  > <abbr title =" Apliko "> Regjistrohu-- </abbr> </a> <a  href="mailto:someone@example.com">Kontakto--</a> <a href="3.html" target="blank_">Produktet---</a> <a href="5.html" target="blank_">Rreth Nesh</a><a  href="drag.html"  > <abbr title =" Apliko "> Stafi </abbr> </a> </p> <p> </div>
     </div>
 <div class="ee">
     
@@ -86,7 +94,11 @@ outline: #171a17 solid 5px;
         mjeksi, shkenca shoqërore, shkenca ekzakte, kulturë, art,<br> autobiografi, monografi të ndryshme të personaliteteve botërorë,kombëtare etj. <br>
 </p>
 <p style="color:black ;font-size:28px;"> <span style="color:red">Pse</span> duhet të lexojmë?
-    A duhet të lexojmë e <span style="color: red">pse?</span> Pyetje, që duhet t’ia bëjë secili vetes, në një botë ku ka kaq shumë libra e në një kohë,<br> kur libri gjithnjë më shpesh zëvendësohet me mjetet<br> moderne të komunikimit, që gjithsesi, nuk do të mund t’ia zënë kurrë vendin! </p>
+    <video width="400" height="240" controls>
+        <source src="v1.mp4" type="video/mp4">
+        <source src="v1.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video></p>
     </div>
     <img src="libri11.png" alt="libri" style="width: 35cm;height: 10cm;">
     
@@ -117,27 +129,40 @@ outline: #171a17 solid 5px;
      <ul>Biografik</ul>
      <li>librashqip</li>
      <ul>Histori</ul>
-
+     Sponsorizuar nga  <a href="https://fiek.uni-pr.edu/"><mark >Fakulteti Inxhinieris Elektrike dhe Kompjuterike</mark></a>
+     <audio controls style="margin-left:25cm">
+        <source src="2.ogg" type="audio/ogg">
+        <source src="2.mp3" type="audio/mpeg">
+     
+    
+      </audio>
    </ul>
-   Sponsorizuar nga  <a href="https://fiek.uni-pr.edu/"><mark >Fakulteti Inxhinieris Elektrike dhe Kompjuterike</mark></a>
-   <audio controls style="margin-left:27cm">
-    <source src="2.ogg" type="audio/ogg">
-    <source src="2.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-
-  </audio>
-  <dl>
-    <dt>Obligative</dt>
-    <dd>Maska dhe Vakcina (anti covid)</dd>
-    <dt>Distanca</dt>
-    <dd>1.5 meter</dd>      </dl>
+   
+   
+ 
   
+</div>
+<div class="Slideshow">
+    
+    <div class="slider">
+        <div class="slider-content">
+          <img src="dukagjini1.jpg" style="width: 300px;height: 300px;">
+        </div>
+        <div class="slider-content">
+          <img src="dukagjini2.jpg" style="width: 300px;height: 300px;">
+        </div>
+        <div class="slider-content">
+          <img src="dukagjini3.jpg" style="width: 300px;height: 300px;">
+        </div>
 </div>
 
 
-
-
-
     
+
+
+
+
+
+    <script src="2.js"></script>    
     </body>
 </HTML>

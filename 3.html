@@ -10,7 +10,7 @@
             background-attachment: fixed;
             background-size: 100% 100%;
         }
-            .h1{text-align: center;width: 5cm; margin-left: 13cm;margin-top: 0cm;height 5cm}
+            .h1{text-align: center;width: 5cm; margin-left: 13cm;margin-top: 0cm;}
             div.gallery {
   margin: 5px;
   border: 3px solid rgb(22, 21, 21);
@@ -37,11 +37,37 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
+div.gallery1 {
+  margin: 5px;
+  border: 3px solid rgb(22, 21, 21);
+  float: left;
+  width: 250px;
+}
+div.gallery1:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+div.gallery1:hover {
+  border: 1px solid #777;
+}
+
+div.gallery1:hover{
+  rotate: 3px;
+}
+
+div.gallery1 img {
+  width: 100%;
+  height: 10cm;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
         </style>
          
     </head>
     <body style="background-image: url('o.jpg');">
-      <div class="h1">
+      <div class="h1" style="height: 3cm;">
       <svg width="400" height="180">
         <rect x="50" y="40" rx="20" ry="20" width="300" height="50"
         style="fill:black;stroke:black;stroke-width:5;opacity:0.5" />
@@ -54,42 +80,73 @@ div.desc {
   
     <img src="shkenc.jpg" alt="shkenc" width="800" height="400">
   </a>
-  <div class="desc">cmimi 4.99euro <button>Blej</button></div>
+  <div class="desc"> <button>Blej 4.99 euro</button></div>
 </div>
 
 <div class="gallery">
   
     <img src="tolstoy.jpg" alt="tolstoy" width="800" height="400">
   </a>
-  <div class="desc">cmimi 8.99 euro <button>Blej</button></div>
+  <div class="desc"> <button id="button1"> Blej 8.99 euro</button></div>
 </div>
 
 <div class="gallery">
   
     <img src="show_logo.jpg" alt="histori" width="800" height="400">
   </a>
-  <div class="desc">cmimi 6.99 euro <button>Blej</button></div>
+  <div class="desc">  <button id="button2">Blej 6.99 euro</button></div>
 </div>
 
 <div class="gallery">
   
     <img src="biografi.jpg" alt="biografi" width="800" height="500">
   </a>
-  <div class="desc">cmimi 5.99 euro <button>blej</button></div>
+  <div class="desc">  <button onclick="blerja()" id="button3">blej 5.99 euro</button></div>
 </div>
 <div class="gallery">
   
     <img src="histori.jpg" alt="histori" width="800" height="500">
   </a>
-  <div class="desc">cmimi 5.99 euro <button>blej</button></div>
+  <div class="desc">  <button onclick="blerja()" id="button4">blej 5.99 euro</button></div>
 </div>
 
+<div class="gallery1">
+  
+  <img src="java.jpg" alt="" width="800" height="400">
+</a>
+<div class="desc"> <button>Blej 4.99 euro</button></div>
+</div>
+<div class="gallery1">
+  
+  <img src="c++.jpg" alt="c++" width="800" height="400">
+</a>
+<div class="desc"> <button>Blej 4.99 euro</button></div>
+</div>
+<div class="gallery1">
+  
+  <img src="Holmes.jpg" alt="Holmes" width="800" height="400">
+</a>
+<div class="desc"> <button>Blej 4.99 euro</button></div>
+</div>
+<div class="gallery1">
+  
+  <img src="lasmiserables.jpg" alt="lasmiserables" width="800" height="400">
+</a>
+<div class="desc"> <button>Blej 4.99 euro</button></div>
+</div>
+<div class="gallery1">
+  
+  <img src="java.jpg" alt="java" width="800" height="400">
+</a>
+<div class="desc"> <button>Blej 4.99 euro</button></div>
+</div>
+
+<input width="30%" id="in1">
 
 
 
 
-
-
+<script src="numrim.js"></script>
     </body>
 
 
