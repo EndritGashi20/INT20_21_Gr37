@@ -19,8 +19,17 @@
   margin-left: 30cm;
   -ms-transform: skewY(50deg);
   resize: both;
-  overflow: auto;
+  overflow: auto; 
+}
+aside {
+  width: 55%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
   
+  background-color: lightgray;
 }
         </style>
         
@@ -37,16 +46,33 @@
           
             style="float: right;">
             </iframe>
+           
             “Parajsën e kam imagjinuar gjithnjë si një lloj librarie”
 
             Këto janë fjalët e një shkrimtari të njohur argjentinas, Jorge Luis Borgesit.
             
-            Ashtu siç përfytyrohet parajsa - e bukur, e qetë, plot paqe - ashtu është edhe brendia e një librarie - qetësi shpirtërore, shumë dije dhe palestër për trurin.
+            Ashtu siç përfytyrohet parajsa - e bukur, e qetë, plot paqe - ashtu është edhe brendia e një librarie - qetësi shpirtërore, shumë dije dhe palestër për truri
+   
             
+            
+            <aside> 
+              
+              
             Nuk ka mundësi të mos kujtosh thëniet të mendjeve të ndritura dedikuar librit, sapo shkel në librarinë “Dukagjini”, në zemër të Prishtinës. Lexuesit që e frekuentojnë i kanë vënë emrin “Institucioni i Librit”. Por, asgjë nuk është arritur brenda ditës apo pak ditësh, pak muajsh apo pak vjetësh.
             
-            Libraria.com filloi punën më 4 Maj të vitit 2000. Ishte periudhë paslufte, vendi kishte shumë humbje e mungesa, ndërsa mes të tjerash ndihej më shumë se kurrë nevoja për literaturë shkollore/universitare dhe krijimtari letrare si për nxënësit e shkollave, studentët,<br> ashtu edhe për lexuesit e rregullt që leximin e kanë ushqim shpirtëror.</p>
+            
+            Libraria.com filloi punën më <time datetime="05-05-2001"> Maj të vitit 2000</time>. Ishte periudhë paslufte, vendi kishte shumë humbje e mungesa, ndërsa mes të tjerash ndihej më shumë se kurrë nevoja për literaturë shkollore/universitare dhe krijimtari letrare si për nxënësit e shkollave, studentët,<br> ashtu edhe për lexuesit e rregullt që leximin e kanë ushqim shpirtëror.
+            <footer>
+              <p> Kontaktohu</p>
+              <p><a href="mailto:hege@example.com">endrit@gmail.com</a></p>
+            </footer>
+          </aside></p>
+
+            
+            
+            
             <audio controls style="margin-left:25cm">
+
               <source src="2.ogg" type="audio/ogg">
               <source src="2.mp3" type="audio/mpeg">
            
@@ -77,7 +103,8 @@
                   case  6:
                     day = "10:00-19:00";
                 }
-                document.getElementById("demo").innerHTML = "Today we are open from " + day;
+                
+                document.getElementById("demo").innerHTML = "<time>Today we are open from</time> " + day;
                 </script>
             
                 

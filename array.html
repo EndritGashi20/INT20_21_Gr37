@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+    th{ 
+        color:#fff;T
+            }
+</style>
+</head>
+
+<body>
+<table class="table table-striped">
+    <tr  class="bg-info">
+        <th>Emri dhe Mbiemri</th>
+        <th>Vendlindja</th>
+        <th>Birthday</th>
+    </tr>
+
+    <tbody id="myTable">
+        
+    </tbody>
+</table>
+
+<script>
+	var myArray = [
+	    {'emri':'Taulant Kosumir', 'vend':'Kosova', 'birthdate':'11/10/1989'},
+	    {'emri':'Ramdan Gashi', 'vend':'Kosova', 'birthdate':'10/1/1989'},
+	    {'emri':'Luljeta Shehu', 'vend':'Shqiperia', 'birthdate':'10/14/1990'},
+	    {'emri':'Donjeta Krasniqi', 'vend':'Maqedonia', 'birthdate':'11/29/1993'},
+	    {'emri':'Endrit Gashi', 'vend':'Kosova', 'birthdate':'8/9/2001'},
+	
+	]
+	
+	buildTable(myArray)
+
+
+
+	function buildTable(data){
+		var table = document.getElementById('myTable')
+
+		for (var i = 0; i < data.length; i++){
+			var row = `<tr>
+							<td>${data[i].emri}</td>
+							<td>${data[i].vend}</td>
+							<td>${data[i].birthdate}</td>
+					  </tr>`
+			table.innerHTML += row
+
+
+		}
+	}
+
+</script>
+</body>
+</html>
