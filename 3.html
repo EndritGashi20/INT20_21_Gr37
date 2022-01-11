@@ -220,8 +220,20 @@ figcaption{
 <p style="font-size: 1cm;">“Miq të mirë, libra të mirë dhe një ndërgjegje e qetë: kjo është jeta ideale.”
 
   ― Mark Twain</p>
+  <button class="btn1">Hide</button>
+<button class="btn2">Show</button>
 
 <script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  $(document).ready(function(){
+  $(".btn1").click(function(){
+    $("p").hide();
+  });
+  $(".btn2").click(function(){
+    $("p").show();
+  });
+});
   
     function productCount(product){
        const inputBtn = document.getElementById('input').value;
