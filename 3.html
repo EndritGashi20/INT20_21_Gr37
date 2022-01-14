@@ -91,7 +91,7 @@ figcaption{
  </div>
   </a>
  
-  <button class="btn" onclick="productCount(false)">-</button>
+  <button class="btn" onclick="productCount(false) ">-</button>
   <input type="number" value="0" id="input">
  
   <button class="btn" onclick="productCount(true)">+</button>
@@ -112,7 +112,7 @@ figcaption{
 <button class="btn" onclick="productCount(false)">-</button>
 <input type="number" value="0" id="input">
 
-<button class="btn" onclick="productCount(true)">+</button>
+<button class="btn" onclick="productCount(true) ">+</button>
 <br>
 
 
@@ -226,7 +226,8 @@ figcaption{
 <button style="background-color: #f44336;" type="button" onclick="myFunction()">Rate</button>
 <p class="parag" id="p01"></p>
 
-
+<p>Count numbers: <output id="result"></output></p>
+<button onclick="startWorker()">Start Worker</button> 
 
 
 
@@ -268,7 +269,12 @@ figcaption{
 
        const total = newInputBtn * 12;
        document.getElementById('total-price').innerText = total;
-    })</script>
+      })
+      var w;
+
+
+
+    </script>
 
 
 
