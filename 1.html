@@ -66,6 +66,24 @@ outline: #171a17 solid 5px;
 .slider{margin-left: 30%;margin-top: 5%;}
 .show-content{display: block;}
 .hidden-content{display: none;}
+button{background: rgb(241, 12, 12);
+  color:rgb(248, 242, 242);
+border-radius: 130px;
+}
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color:rgba(0,0,0,0.5);
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+.slider{margin-left: 30%;margin-top: 5%;}
+.show-content{display: block;}
+.hidden-content{display: none;}
  
     </style>
     </head>
@@ -91,8 +109,11 @@ outline: #171a17 solid 5px;
     <video width="400" height="240" controls>
         <source src="v1.mp4" type="video/mp4">
         <source src="v1.ogg" type="video/ogg">
-      Your browser does not support the video tag.
-      </video></p>
+     
+      </video><button id="nr1">Shtyp për Stamboll</button>
+      <button id="nr2">Mbylle </button>
+      <div id="div1" style="width:80px;height:80px;display:none;"> <img  src="istanbull.jpg" alt="istanbull""><br>
+      </div></p>
     </div>
     <img src="libri11.png" alt="libri" style="width: 35cm;height: 10cm;">
     
@@ -102,49 +123,70 @@ outline: #171a17 solid 5px;
 
 <p> </p>
 
-<div class="lista">
-    <p>Numri Kontaktues</p>  
- <ol >                                    
- 
-     <li>049111111</li>
-     <li>045111111</li>
-     <LI>043111111</LI>
- </ol>
- <p>TRANSPORT</p>
- <UL style="list-style-type: square;">
-     <li>KOSOVE</li>
-     <LI>SHQIPERI</LI>
-     <LI>MAQEDONI</LI>
- </UL>
- <P>PARTNERSHIP</P>
- <ul>
-    <li>Dukagjini</li>
-     <ul>Shkencor</ul>
-     <ul>Biografik</ul>
-     <li>librashqip</li>
-     <ul>Histori</ul>
-     Sponsorizuar nga  <a href="https://fiek.uni-pr.edu/"><mark >Fakulteti Inxhinieris Elektrike dhe Kompjuterike</mark></a>
+<div id="flip">Rreth Nesh</div>
+<div id="panel" >   <p>Numri Kontaktues</p>  
+    <ol >                                    
     
-   </ul>
-   
-   
- 
-  
-</div>
-<div class="Slideshow">
-    
-    <div class="slider">
+        <li >049111111</li>
+        <li>045111111</li>
+        <LI>043111111</LI>
+    </ol>
+    <p>TRANSPORT</p>
+    <UL style="list-style-type: square;">
+        <li>KOSOVE</li>
+        <LI>SHQIPERI</LI>
+        <LI>MAQEDONI</LI>
+    </UL>
+    <P>PARTNERSHIP</P>
+    <ul>
+       <li>Dukagjini</li>
+        <ul>Shkencor</ul>
+        <ul>Biografik</ul>
+        <li>librashqip</li>
+        <ul>Histori</ul>
+        Sponsorizuar nga  <a href="https://fiek.uni-pr.edu/"><mark >Fakulteti Inxhinieris Elektrike dhe Kompjuterike</mark></a>
+       
+      </ul>
+      <div class="slider">
         <div class="slider-content">
-          <img src="dukagjini1.jpg" style="width: 300px;height: 300px;">
+          <img src="dukagjini1.jpg" style="width: 800px;height: 300px;">
         </div>
         <div class="slider-content">
-          <img src="dukagjini2.jpg" style="width: 300px;height: 300px;">
+          <img src="dukagjini2.jpg" style="width: 800px;height: 300px;">
         </div>
         <div class="slider-content">
-          <img src="dukagjini3.jpg" style="width: 300px;height: 300px;">
+          <img src="dukagjini3.jpg" style="width: 800px;height: 300px;">
         </div>
 </div>
-
+<button id="close" style="padding: 15px 590px;"><span style="font-size: larger;font-family: Arial, Helvetica, sans-serif;">Mbylle</span></button>
+      </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $("#nr1").click(function(){
+    $("#div1").fadeIn();
+   
+  });
+});
+$(document).ready(function(){
+  $("#nr2").click(function(){
+    $("#div1").fadeOut();
+   
+  });
+});
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+$(document).ready(function(){
+  $("#close").click(function(){
+    $("#panel").hide("slow", function(){
+      
+    });
+  });
+});
+</script>
 
     
 

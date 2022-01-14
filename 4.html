@@ -28,14 +28,20 @@ tr:nth-child(even) {
 details > summary {
   padding: 4px;
   width: 200px;
-  background-color: fill: black; stroke:black; stroke-width:5; opacity:0.5;
+  background-color:  gray;
+  stroke:gray;
+  stroke-width:5;
+  opacity:0.9;
   border: none;
   
-  cursor: pointer;
+  cursor: pointer
 }
 
 details > p {
-  background-color: fill:black;stroke:black;stroke-width:5;opacity:0.5;
+  background-color:gray;
+  stroke:gray;
+  stroke-width:5;
+  opacity:0.9;
   padding: 4px;
   margin: 0;
   box-shadow: 1px 1px 2px #bbbbbb;
@@ -49,6 +55,7 @@ $(document).ready(function(){
     $(this).hide();
   });
 });
+
 </script>
 </head>
 <body style="background-image: url('o.jpg');">
@@ -123,7 +130,8 @@ $(document).ready(function(){
         <dt>Obligative</dt>
         <dd>Maska dhe Vakcina (anti covid)</dd>
         <dt>Distanca</dt>
-        <dd>1.5 meter</dd>      </dl>
+        <dd>1.5 meter</dd>    
+            </dl>
     </details>
     <div5 >
     
@@ -140,6 +148,25 @@ $(document).ready(function(){
         
         </video>
     </div5>
+    <script>
+      class User {
+constructor(name,mbiemri,email){
+this.email=email;
+this.mbiemri=mbiemri;
+this.name=name;
+  }
+}
+
+var shk1=new User('Ali','Podrimja','alipodrimja@gmail.com');
+console.log(shk1);
+var shk2=new User('Agron','Tufa','agrontufa@gmail.com');
+console.log(shk2);
+var shk3=new User('Ismet ','Aliu','ismetaliu@gmail.com');
+console.log(shk3);
+var shk4=new User('Kim','Mehmeti','Kimmehmeti@gmail.com');
+console.log(shk4);
+
+</script>
 
 </body>
 </html>
