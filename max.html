@@ -18,7 +18,7 @@
     
     </style>
 
-<body style="text-align:center;" background-image: url(o.jpg); >
+<body style="background-image: url('o.jpg');" >
     <h1 style="color:red;">  
             Loja Shpërblyese  
         </h1>
@@ -43,10 +43,10 @@
 
 $(document).ready(function(){
   $("#hide").click(function(){
-    $("h1").hide();
+    $("h2").hide();
   });
   $("#show").click("slow",function(){
-    $("h1").show();
+    $("h2").show();
   });
 });
         var x = document.getElementById("demo");
@@ -98,19 +98,11 @@ function showPosition(position) {
 let resultest = pattern.test(text);
         console.log(resultest)
 
-        function LojaShperblyese(a, b, c) {
-    this.A = a;
-    this.B = b;
-    this.C = c;
-    this.n = function () {
-        //return this.A + this.B;
-        document.write(n);
-    }
-}
+      
 
     </script>  
-    <button onclick="LojaShperblyese()">Click</button>
-    <h1>REKLAMO KETU 044-111-222</h1>
+    
+    <h2>REKLAMO KETU 044-111-222</h2>
     <button id="hide">Hide</button>
 <button id="show">Show</button>
 </body>
