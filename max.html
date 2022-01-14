@@ -15,6 +15,7 @@
         background-attachment: fixed;
         background-size: 100% 100%;
     }
+    
     </style>
 </head>
   
@@ -33,12 +34,41 @@
     </button>
     <p id="GFG_DOWN" style="color: black;">
     </p>
+    <p></p>
+
+<button onclick="getLocation()">Cakto lokacionin</button>
+
+<p id="demo"></p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("h1").hide();
+  });
+  $("#show").click("slow",function(){
+    $("h1").show();
+  });
+});
+        var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
         var up = document.getElementById('GFG_UP');
         var down = document.getElementById('GFG_DOWN');
         up.innerHTML = 
           "Për të marr pjes në lojën shpërblyese Shtypni në numër prej 0-1000"+
-          " is in range or not.<br>Vlera minimale - 0 <br> Vlera maksimale - 1000";
+          " is in range or not.<br>Vlera minimale - 0 <br> Vlera maksimale - 1000<br>Po ashtu caktoni lokacionin</br>";
   
         function loja() {
             var input = document.getElementById('num');
@@ -51,11 +81,25 @@
                 $('#GFG_DOWN').html('Ju letem shtypni nje numer ndërmjet 0-1000');
                 input.value = 1000;
             } else {
-                $('#GFG_DOWN').html('Faleminderit për pjes marrje .');
+                $('#GFG_DOWN').html('Faleminderit për pjesëmarrje .');
                 input.value = n;
             }
         }
-    </script>
+        let str = 'Nw lojwn tonw shpwrblyese ju mund te fitoni :<br>Samsung SmartBand<br>Laptop ASUS<br>Apple Iphone 13';
+        let newStr = str.replace(/w/gi,'ë');
+        document.writeln(newStr);
+        
+        
+        let text = 'Nw lojwn tonw shpwrblyese ju mund te fitoni :<br>Samsung SmartBand<br>Laptop ASUS<br>Apple Iphone 13'
+        let result = text.match(/w/gi);
+
+        console.log(result)
+        //document.getElementById("demo").innerHTML = result;     
+
+    </script>  
+    <h1>REKLAMO KETU 044-111-222</h1>
+    <button id="hide">Hide</button>
+<button id="show">Show</button>
 </body>
   
 </html>
