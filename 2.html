@@ -1,24 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script>
+  
 
-function allowDrop(ev) {
-  ev.preventDefault();
-}
-
-function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
-}
-
-function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
-}
-
-
-  </script>
+  
     <style>
         .header{
 height:150px;
@@ -89,7 +74,8 @@ input {
     <input type="radio" name="gjinia" value=1>Mashkull<br>
     <input type="radio" name="gjinia" value=1>Femer<br>
 </label>
-<label>Paswordi;
+<label>
+Paswordi;
 
     <input type="password" id="in4">
 </label>
@@ -110,8 +96,7 @@ input {
 Your browser does not support the audio element.
 </audio>
 <script src="form.js"></script>
+
 </body>
 
 </html>
-
-

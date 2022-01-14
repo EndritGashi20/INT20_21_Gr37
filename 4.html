@@ -40,7 +40,16 @@ details > p {
   margin: 0;
   box-shadow: 1px 1px 2px #bbbbbb;
 }
+
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
 </head>
 <body style="background-image: url('o.jpg');">
 
@@ -104,7 +113,7 @@ details > p {
            <td></td>
     </tr>
 </table>
-<p style="font-family: 'Courier New', Courier, monospace;color: color :red;font-size: 40px;"><b>“Nëse lexon vetëm librat që i lexojnë të githë, do të mendosh vetëm gjërat që i mendojnë të gjithë.”
+<p><b>“Nëse lexon vetëm librat që i lexojnë të githë, do të mendosh vetëm gjërat që i mendojnë të gjithë.”
 
     Haruki Murakami</b></p>
     <details>
